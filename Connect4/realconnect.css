@@ -1,0 +1,105 @@
+
+div.p1:hover {
+    /* background-image: url("yellowtop.jpeg");
+    color: transparent;
+    background-size: 100%;
+    width: 100%;
+     height: 100%;
+     vertical-align: middle;
+     font-size: 0;
+     line-height:10; */
+     cursor: url('redtop.jpg'), grabbing;
+     background: #8b8015;
+     
+}
+
+div.head:hover {
+    cursor: url('yellowtop.jpeg'), grabbing;
+    background: #490f0f;
+}
+
+.head{
+    /* color: transparent;
+    /* line-height: 75px;
+    min-width: 100%; */
+    margin: auto;
+    color: transparent;
+    /* background-size: 100%; */
+   /* line-height: 3; */
+   min-height: 100px;
+    min-width: 100%; 
+    /* max-width: 102px; */ 
+    cursor: grabbing;	
+}
+
+h1 {
+    background-color: whitesmoke;
+}
+
+div.head:hover {
+    cursor: url('yellowtop.jpeg'), grabbing;
+    background-image: url('redtop.jpg');
+    background-size: cover;
+}
+
+div.head {
+    cursor: url('yellowtop.jpeg'), grabbing;
+    background: #c95555;
+}
+
+div.head.p1 {
+    background-color: rgb(243, 243, 152);
+}
+
+div.head.p1:hover {
+    /* background-color: yellow; */
+    background-image: url('yellowtop.jpeg');
+    background-size: cover;
+}
+
+.game {
+   /* background-image: url("white.png"); */
+   color: transparent;
+   margin: auto;
+   /* background-size: 100%; */
+   /* line-height: 65px;
+   min-width: 100%; */
+   /* width: 100%;
+    height: 100%;
+    vertical-align: middle; */
+    max-width: 102px;
+    margin: 0;
+    padding: 0;
+    
+    /* display: flex; */
+}
+
+
+
+.boardgame {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(6, auto);
+    align-items: center;
+    
+    /* height: 100%;  */
+    margin: auto;
+    padding: 0;
+    object-fit: contain;
+    background-color: blue;
+
+   
+}
+
+
+
+.container-fluid {
+    /* margin: 100px, 0, 0, 0; */
+    padding: 0;
+    text-align: center;
+    max-width: 710px;
+}
+
+img{
+    object-fit: contain;
+}

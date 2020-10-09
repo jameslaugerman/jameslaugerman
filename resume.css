@@ -1,0 +1,217 @@
+body,
+html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* OPENING ANIMATION */
+
+body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.parallax {
+    animation: fadeInAnimation ease-in 12s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.row {
+    margin: 0 auto 0 auto;
+}
+
+.i1 {
+    background-image: url("imgs/2019-0006.jpg");
+}
+
+.i2 {
+    background-image: url("imgs/people.jpg");
+    min-height: 30%;
+}
+
+.i3 {
+    background-image: url("imgs/computer.jpg");
+    min-height: 100%;
+    /* margin: -300px, 0, 0, 0;
+    overflow: hidden; */
+    object-position: center;
+    opacity: 100%;
+}
+
+.james {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .james>.maely {
+        margin: -100px 0 -100px 0;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .james>.maely {
+        margin: -75px 0 0 0;
+    }
+    .story>h1 {
+        font-size: 2rem;
+        margin: 25px 0 25px 0;
+    }
+    #m1 {
+        background-image: url("imgs/m1.jpeg");
+    }
+    #m2 {
+        background-image: url("imgs/m2.jpg");
+    }
+    #m3 {
+        background-image: url("imgs/m3.jpg");
+    }
+}
+
+.s1,
+.s2>p {
+    margin: 30px 10% 30px 10%;
+}
+
+.maely {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    margin: -300px 0 -100px 0;
+    overflow: hidden;
+    /* margin-bottom: -300px; */
+    /* max-height: 400px; */
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    /* border: solid 1px black; */
+    /* background: rgba(141, 139, 139, 0.2); */
+    font-size: 1em;
+    color: black;
+    text-align: center;
+}
+
+.caption h1 {
+    font-size: 4em;
+    color: black;
+    font-weight: 400;
+}
+
+.caption h3 {
+    font-size: 2.5em;
+    color: black;
+    font-weight: 300;
+}
+
+.parallax {
+    /* The image used */
+    /* Full height */
+    /* height: 90%; */
+    /* Create the parallax scrolling effect */
+    position: scroll;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80%;
+    opacity: 88%;
+}
+
+.pixel,
+.i1 {
+    opacity: 54%;
+}
+
+
+/* .i2 {
+    opacity: 100%;
+} */
+
+
+/* PHONES */
+
+@media only screen and (max-width: 560px) {
+    .caption>h1 {
+        font-size: 2.5em;
+    }
+    .caption>h3 {
+        font-size: 1.5em;
+    }
+    .maely {
+        object-fit: cover;
+        object-position: 0 0px;
+        margin-bottom: 0px
+    }
+    .i1 {
+        margin: 0 0px 0 -800px;
+        min-width: 100%;
+    }
+}
+
+
+/* @media (min-width: 600px) {
+    #lgFont {
+        font-size: 2.5em;
+        margin-bottom: 2000px;
+        /* max-height: 2%; */
+
+.transbox {
+    /* margin: 2px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    /* background-color: #ffffff; */
+    /* border: 1px solid black; */
+    /* opacity: 0.3; */
+    margin-left: 20px;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    background: rgba(204, 204, 204, 0.2);
+    border-radius: 75px;
+    /* background: rgb(204, 204, 204); Fallback for older browsers without RGBA-support */
+}
+
+.col-lg-6 {
+    padding: 0;
+}
+
+.nerd {
+    margin: 20px 0 2px 0;
+}
+
+
+/* @media only screen and (max-device-width: 480px) {
+    .headerx {
+        opacity: 50%;
+    }
+} */
+
+
+/* #container1 DIV {
+    margin: 50px;
+    padding: 50px;
+    background-color: pink;
+} */
+
+.hideme {
+    opacity: 0;
+}

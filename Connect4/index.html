@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Connect 4</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="realconnect.css">
+    <!-- vue
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>oudivated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<h1 class="title display-4 mx-auto text-center">
+    CONNECT 4
+</h1>
+<h4 class="display 5 mx-auto text-center"><em>Drop the pieces from the top of the board</em></h4>
+<div class="container-fluid">
+<div class="boardgame">
+    <!-- <div class="row no-gutter"> -->
+    <!-- <div class="header"> -->
+      
+            <!-- <div class="col-lg-6">  -->
+            <!-- <img src="http://www.streetartutopia.com/wp-content/uploads/2012/11/Street-Art-by-David-Walker-in-London-England.jpg"  alt="Responsive image">
+            </div> -->
+            <!-- <div class="col-lg-6">  -->
+            <!-- <img src="http://www.streetartutopia.com/wp-content/uploads/2012/11/Street-Art-by-David-Walker-in-London-England.jpg"  alt="Responsive image">
+            </div> -->
+         
+         
+   
+        <div class="head p1" onclick="clicked(0)">H</div>
+        <div class="head p1" onclick="clicked(1)">H</div>
+        <div class="head p1" onclick="clicked(2)">H</div>
+        <div class="head p1" onclick="clicked(3)">H</div>
+        <div class="head p1" onclick="clicked(4)">H</div>
+        <div class="head p1" onclick="clicked(5)">H</div>
+        <div class="head p1" onclick="clicked(6)">H</div>
+    <!-- </div> -->   <!-- <div class="gameBody"> -->
+              <!-- <th scope="row row1"></th> -->
+              <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+             
+          
+              <!-- <th scope="row row2"></th> -->
+              <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+           
+           
+              <!-- <th scope="row row3"></th> -->
+              <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+
+           
+                <!-- <th scope="row row4"></th> -->
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+  
+              
+                <!-- <th scope="row row5"></th> -->
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+            
+                <!-- <th scope="row row6"></th> -->
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+                <div class="game"><img src="white.png" alt=""></div>
+  
+           
+            
+        <!-- </div> -->
+      <!-- </div> -->
+</div>
+</div>
+<!-- 
+<script>
+    window.addEventListener('keydown', addClass);
+    
+    function addClass(e){
+        const clicker = window.querySelector(div[img="${e.keyCode"])
+    }
+  
+
+
+    function playSound(e) {
+      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+      const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+      if (!audio) return;
+
+
+  
+      key.classList.add('playing');
+      audio.currentTime = 0;
+      audio.play();
+    }
+  
+    const keys = Array.from(document.querySelectorAll('.key'));
+    keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+    window.addEventListener('keydown', playSound);
+  </script> -->
+
+        <script src="realconnect.js" async defer></script>
+    </body>
+</html>
