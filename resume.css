@@ -14,7 +14,7 @@ body {
 }
 
 .parallax {
-    animation: fadeInAnimation ease-in 12s;
+    animation: fadeInAnimation ease-in 6s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -107,6 +107,7 @@ body {
     font-size: 1em;
     color: black;
     text-align: center;
+    z-index: 1;
 }
 
 .caption h1 {
