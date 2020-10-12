@@ -215,3 +215,22 @@ body {
 .hideme {
     opacity: 0;
 }
+
+
+/* FOOTER CSS */
+
+.text-white a {
+    color: #dddbdb;
+}
+
+.bg-primary {
+    background-color: #000 !important;
+}
+
+.text-white a:hover {
+    text-decoration: none !important;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.12em;
+    text-transform: uppercase;
+}
